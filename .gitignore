@@ -1,0 +1,70 @@
+# ==========================================
+# Pelangi Frame - Git Ignore Configuration
+# ==========================================
+
+# 1. Environment & Secret Variables
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.env
+*.env.local
+
+# 2. Google Cloud Service Account & Secret Keys
+credentials.json
+backend/credentials.json
+*credentials*.json
+pelangi-frame-*.json
+service_account*.json
+service-account*.json
+*.pem
+*.key
+*.p12
+
+# 3. Python & Virtual Environments (Backend)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+pelangi/
+ENV/
+env.bak/
+venv.bak/
+.pytest_cache/
+.coverage
+htmlcov/
+*.sqlite3
+
+# Temporary file storage
+temp_uploads/
+backend/temp_uploads/
+backend/temp_uploads/*
+!backend/temp_uploads/.gitkeep
+
+# 4. Node.js & Next.js (Frontend)
+node_modules/
+frontend/node_modules/
+.next/
+frontend/.next/
+out/
+frontend/out/
+build/
+dist/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# 5. Editor & OS files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db
+.kiro/
